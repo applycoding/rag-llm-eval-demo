@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: pgvector/pgvector:pg16
+        env:
+          POSTGRES_USER: ragqa
+          POSTGRES_PASSWORD: ragqa
+          POSTGRES_DB: ragqa
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U ragqa -d ragqa"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+      - name: Install
+        run: pip install -e ".[dev]"
+      - name: Test
+        env:
+          DATABASE_URL: postgresql://ragqa:ragqa@localhost:5432/ragqa
+          RAGQA_EMBEDDER: hash
+          RAGQA_LLM: extractive
+        run: pytest
+      - name: Evaluate
+        env:
+          RAGQA_EMBEDDER: hash
+          RAGQA_LLM: extractive
+        run: python -m ragqa.eval --embedder hash --output evals/ci_results.json --min-hit-rate 1.0
+      - name: Upload eval results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: eval-results
+          path: evals/ci_results.json

@@ -1,0 +1,649 @@
+{
+  "embedder": "hash",
+  "llm": "extractive",
+  "k": 4,
+  "summaries": [
+    {
+      "pipeline": "langchain",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.8379629629629629,
+      "answer_correctness": 1.0,
+      "retrieval_hit_rate": 1.0,
+      "context_recall": 1.0,
+      "mean_latency_ms": 2.2912176667091444,
+      "n": 12
+    },
+    {
+      "pipeline": "llamaindex",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.8379629629629629,
+      "answer_correctness": 1.0,
+      "retrieval_hit_rate": 1.0,
+      "context_recall": 1.0,
+      "mean_latency_ms": 0.7859795833648301,
+      "n": 12
+    },
+    {
+      "pipeline": "tfidf",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.8379629629629629,
+      "answer_correctness": 1.0,
+      "retrieval_hit_rate": 1.0,
+      "context_recall": 1.0,
+      "mean_latency_ms": 0.8273912500082284,
+      "n": 12
+    }
+  ],
+  "examples": [
+    {
+      "id": "lantern-lit",
+      "pipeline": "langchain",
+      "faithfulness": 1.0,
+      "answer_relevance": 1.0,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 5.720283000073323,
+      "answer": "The Meridian lighthouse lantern was first lit on March 12, 1886.",
+      "retrieved_documents": [
+        "meridian-lighthouse",
+        "ferry-compact",
+        "cedar-observatory",
+        "meridian-lighthouse"
+      ]
+    },
+    {
+      "id": "lantern-lit",
+      "pipeline": "llamaindex",
+      "faithfulness": 1.0,
+      "answer_relevance": 1.0,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 0.9952150001026894,
+      "answer": "The Meridian lighthouse lantern was first lit on March 12, 1886.",
+      "retrieved_documents": [
+        "meridian-lighthouse",
+        "ferry-compact",
+        "cedar-observatory",
+        "meridian-lighthouse"
+      ]
+    },
+    {
+      "id": "lantern-lit",
+      "pipeline": "tfidf",
+      "faithfulness": 1.0,
+      "answer_relevance": 1.0,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 0.9180970000670641,
+      "answer": "The Meridian lighthouse lantern was first lit on March 12, 1886.",
+      "retrieved_documents": [
+        "meridian-lighthouse",
+        "meridian-lighthouse",
+        "cedar-observatory",
+        "cedar-observatory"
+      ]
+    },
+    {
+      "id": "keeper-voss",
+      "pipeline": "langchain",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.7777777777777778,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 2.530911000121705,
+      "answer": "Keeper Ada Voss tended the light from that first night until her retirement in 1909.",
+      "retrieved_documents": [
+        "meridian-lighthouse",
+        "cedar-observatory",
+        "cedar-observatory",
+        "meridian-lighthouse"
+      ]
+    },
+    {
+      "id": "keeper-voss",
+      "pipeline": "llamaindex",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.7777777777777778,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 0.7683669998641562,
+      "answer": "Keeper Ada Voss tended the light from that first night until her retirement in 1909.",
+      "retrieved_documents": [
+        "meridian-lighthouse",
+        "cedar-observatory",
+        "cedar-observatory",
+        "meridian-lighthouse"
+      ]
+    },
+    {
+      "id": "keeper-voss",
+      "pipeline": "tfidf",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.7777777777777778,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 0.869256999976642,
+      "answer": "Keeper Ada Voss tended the light from that first night until her retirement in 1909.",
+      "retrieved_documents": [
+        "meridian-lighthouse",
+        "meridian-lighthouse",
+        "ferry-compact",
+        "salt-warehouse"
+      ]
+    },
+    {
+      "id": "crown-ring",
+      "pipeline": "langchain",
+      "faithfulness": 1.0,
+      "answer_relevance": 1.0,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 1.9551220000266767,
+      "answer": "Its crown ring was cast in naval bronze by the Barbizon Glassworks.",
+      "retrieved_documents": [
+        "meridian-lighthouse",
+        "meridian-lighthouse",
+        "cedar-observatory",
+        "meridian-lighthouse"
+      ]
+    },
+    {
+      "id": "crown-ring",
+      "pipeline": "llamaindex",
+      "faithfulness": 1.0,
+      "answer_relevance": 1.0,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 0.718845999926998,
+      "answer": "Its crown ring was cast in naval bronze by the Barbizon Glassworks.",
+      "retrieved_documents": [
+        "meridian-lighthouse",
+        "meridian-lighthouse",
+        "cedar-observatory",
+        "meridian-lighthouse"
+      ]
+    },
+    {
+      "id": "crown-ring",
+      "pipeline": "tfidf",
+      "faithfulness": 1.0,
+      "answer_relevance": 1.0,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 0.7593120001274656,
+      "answer": "Its crown ring was cast in naval bronze by the Barbizon Glassworks.",
+      "retrieved_documents": [
+        "meridian-lighthouse",
+        "meridian-lighthouse"
+      ]
+    },
+    {
+      "id": "diaphone-serial",
+      "pipeline": "langchain",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.875,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 1.885006999827965,
+      "answer": "The compressed-air diaphone installed in 1911 carries serial number DH-44.",
+      "retrieved_documents": [
+        "meridian-lighthouse",
+        "pilot-notes",
+        "cedar-observatory",
+        "meridian-lighthouse"
+      ]
+    },
+    {
+      "id": "diaphone-serial",
+      "pipeline": "llamaindex",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.875,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 0.7458980001047166,
+      "answer": "The compressed-air diaphone installed in 1911 carries serial number DH-44.",
+      "retrieved_documents": [
+        "meridian-lighthouse",
+        "pilot-notes",
+        "cedar-observatory",
+        "meridian-lighthouse"
+      ]
+    },
+    {
+      "id": "diaphone-serial",
+      "pipeline": "tfidf",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.875,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 0.8520270000644814,
+      "answer": "The compressed-air diaphone installed in 1911 carries serial number DH-44.",
+      "retrieved_documents": [
+        "meridian-lighthouse",
+        "cedar-observatory",
+        "meridian-lighthouse",
+        "salt-warehouse"
+      ]
+    },
+    {
+      "id": "horse-cart-fare",
+      "pipeline": "langchain",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.875,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 1.951171999962753,
+      "answer": "The ferry compact sets the night crossing fare for a horse cart at 40 cents.",
+      "retrieved_documents": [
+        "ferry-compact",
+        "ferry-compact",
+        "meridian-lighthouse",
+        "pilot-notes"
+      ]
+    },
+    {
+      "id": "horse-cart-fare",
+      "pipeline": "llamaindex",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.875,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 0.7825409998076793,
+      "answer": "The ferry compact sets the night crossing fare for a horse cart at 40 cents.",
+      "retrieved_documents": [
+        "ferry-compact",
+        "ferry-compact",
+        "meridian-lighthouse",
+        "pilot-notes"
+      ]
+    },
+    {
+      "id": "horse-cart-fare",
+      "pipeline": "tfidf",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.875,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 0.8111110000754707,
+      "answer": "The ferry compact sets the night crossing fare for a horse cart at 40 cents.",
+      "retrieved_documents": [
+        "ferry-compact",
+        "ferry-compact",
+        "pilot-notes",
+        "ferry-compact"
+      ]
+    },
+    {
+      "id": "freight-window",
+      "pipeline": "langchain",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.8333333333333334,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 1.9284460001927073,
+      "answer": "The ferry compact opens the dawn freight window at 4:10 a.m.",
+      "retrieved_documents": [
+        "ferry-compact",
+        "ferry-compact",
+        "cedar-observatory",
+        "meridian-lighthouse"
+      ]
+    },
+    {
+      "id": "freight-window",
+      "pipeline": "llamaindex",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.8333333333333334,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 0.7637749999958032,
+      "answer": "The ferry compact opens the dawn freight window at 4:10 a.m.",
+      "retrieved_documents": [
+        "ferry-compact",
+        "ferry-compact",
+        "cedar-observatory",
+        "meridian-lighthouse"
+      ]
+    },
+    {
+      "id": "freight-window",
+      "pipeline": "tfidf",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.8333333333333334,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 0.79978899998423,
+      "answer": "The ferry compact opens the dawn freight window at 4:10 a.m.",
+      "retrieved_documents": [
+        "ferry-compact",
+        "ferry-compact",
+        "meridian-lighthouse",
+        "pilot-notes"
+      ]
+    },
+    {
+      "id": "arbitrator",
+      "pipeline": "langchain",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.75,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 2.1198160000039934,
+      "answer": "The ferry compact names Judge Inez Calder of the county court as arbitrator.",
+      "retrieved_documents": [
+        "ferry-compact",
+        "ferry-compact",
+        "meridian-lighthouse",
+        "cedar-observatory"
+      ]
+    },
+    {
+      "id": "arbitrator",
+      "pipeline": "llamaindex",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.75,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 0.9103970000978734,
+      "answer": "The ferry compact names Judge Inez Calder of the county court as arbitrator.",
+      "retrieved_documents": [
+        "ferry-compact",
+        "ferry-compact",
+        "meridian-lighthouse",
+        "cedar-observatory"
+      ]
+    },
+    {
+      "id": "arbitrator",
+      "pipeline": "tfidf",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.75,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 0.8091459999377548,
+      "answer": "The ferry compact names Judge Inez Calder of the county court as arbitrator.",
+      "retrieved_documents": [
+        "ferry-compact",
+        "ferry-compact",
+        "pilot-notes",
+        "meridian-lighthouse"
+      ]
+    },
+    {
+      "id": "perseid-count",
+      "pipeline": "langchain",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.8333333333333334,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 1.9709130001501762,
+      "answer": "Mara Ellison logged 214 meteors at the Cedar observatory during the August 1908 Perseid watch.",
+      "retrieved_documents": [
+        "cedar-observatory",
+        "meridian-lighthouse",
+        "salt-warehouse",
+        "cedar-observatory"
+      ]
+    },
+    {
+      "id": "perseid-count",
+      "pipeline": "llamaindex",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.8333333333333334,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 0.7888729999194766,
+      "answer": "Mara Ellison logged 214 meteors at the Cedar observatory during the August 1908 Perseid watch.",
+      "retrieved_documents": [
+        "cedar-observatory",
+        "meridian-lighthouse",
+        "salt-warehouse",
+        "cedar-observatory"
+      ]
+    },
+    {
+      "id": "perseid-count",
+      "pipeline": "tfidf",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.8333333333333334,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 0.8506899998792505,
+      "answer": "Mara Ellison logged 214 meteors at the Cedar observatory during the August 1908 Perseid watch.",
+      "retrieved_documents": [
+        "cedar-observatory",
+        "cedar-observatory",
+        "pilot-notes",
+        "meridian-lighthouse"
+      ]
+    },
+    {
+      "id": "barometer",
+      "pipeline": "langchain",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.8333333333333334,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 1.9367180000244844,
+      "answer": "Cedar observatory retired barometer number 17 after the glass cracked in the January 1912 freeze.",
+      "retrieved_documents": [
+        "cedar-observatory",
+        "cedar-observatory",
+        "meridian-lighthouse",
+        "ferry-compact"
+      ]
+    },
+    {
+      "id": "barometer",
+      "pipeline": "llamaindex",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.8333333333333334,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 0.7253200001287041,
+      "answer": "Cedar observatory retired barometer number 17 after the glass cracked in the January 1912 freeze.",
+      "retrieved_documents": [
+        "cedar-observatory",
+        "cedar-observatory",
+        "meridian-lighthouse",
+        "ferry-compact"
+      ]
+    },
+    {
+      "id": "barometer",
+      "pipeline": "tfidf",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.8333333333333334,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 0.7968849999997474,
+      "answer": "Cedar observatory retired barometer number 17 after the glass cracked in the January 1912 freeze.",
+      "retrieved_documents": [
+        "cedar-observatory",
+        "cedar-observatory",
+        "cedar-observatory",
+        "meridian-lighthouse"
+      ]
+    },
+    {
+      "id": "dome-slit",
+      "pipeline": "langchain",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.6666666666666666,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 1.848699000220222,
+      "answer": "The Cedar observatory dome slit faces 12 degrees west of true north.",
+      "retrieved_documents": [
+        "cedar-observatory",
+        "cedar-observatory",
+        "salt-warehouse",
+        "meridian-lighthouse"
+      ]
+    },
+    {
+      "id": "dome-slit",
+      "pipeline": "llamaindex",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.6666666666666666,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 0.7559160001164855,
+      "answer": "The Cedar observatory dome slit faces 12 degrees west of true north.",
+      "retrieved_documents": [
+        "cedar-observatory",
+        "cedar-observatory",
+        "salt-warehouse",
+        "meridian-lighthouse"
+      ]
+    },
+    {
+      "id": "dome-slit",
+      "pipeline": "tfidf",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.6666666666666666,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 0.8231449999129836,
+      "answer": "The Cedar observatory dome slit faces 12 degrees west of true north.",
+      "retrieved_documents": [
+        "cedar-observatory",
+        "cedar-observatory",
+        "meridian-lighthouse",
+        "pilot-notes"
+      ]
+    },
+    {
+      "id": "salt-harvest",
+      "pipeline": "langchain",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.7777777777777778,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 1.9197659999008465,
+      "answer": "Noah Briggs certified the 1904 municipal salt harvest at 1,840 bushels.",
+      "retrieved_documents": [
+        "salt-warehouse",
+        "pilot-notes",
+        "salt-warehouse",
+        "meridian-lighthouse"
+      ]
+    },
+    {
+      "id": "salt-harvest",
+      "pipeline": "llamaindex",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.7777777777777778,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 0.7486440001684969,
+      "answer": "Noah Briggs certified the 1904 municipal salt harvest at 1,840 bushels.",
+      "retrieved_documents": [
+        "salt-warehouse",
+        "pilot-notes",
+        "salt-warehouse",
+        "meridian-lighthouse"
+      ]
+    },
+    {
+      "id": "salt-harvest",
+      "pipeline": "tfidf",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.7777777777777778,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 0.8221909999974741,
+      "answer": "Noah Briggs certified the 1904 municipal salt harvest at 1,840 bushels.",
+      "retrieved_documents": [
+        "salt-warehouse",
+        "pilot-notes",
+        "salt-warehouse",
+        "cedar-observatory"
+      ]
+    },
+    {
+      "id": "dunn-shipment",
+      "pipeline": "langchain",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.8333333333333334,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 1.7277590000048804,
+      "answer": "The salt warehouse rejected the 1906 Dunn shipment because its moisture measured 6.5 percent.",
+      "retrieved_documents": [
+        "salt-warehouse",
+        "salt-warehouse",
+        "pilot-notes",
+        "meridian-lighthouse"
+      ]
+    },
+    {
+      "id": "dunn-shipment",
+      "pipeline": "llamaindex",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.8333333333333334,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 0.7279630001448822,
+      "answer": "The salt warehouse rejected the 1906 Dunn shipment because its moisture measured 6.5 percent.",
+      "retrieved_documents": [
+        "salt-warehouse",
+        "salt-warehouse",
+        "pilot-notes",
+        "meridian-lighthouse"
+      ]
+    },
+    {
+      "id": "dunn-shipment",
+      "pipeline": "tfidf",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.8333333333333334,
+      "answer_correctness": 1.0,
+      "hit": true,
+      "context_recall": 1.0,
+      "latency_ms": 0.8170450000761775,
+      "answer": "The salt warehouse rejected the 1906 Dunn shipment because its moisture measured 6.5 percent.",
+      "retrieved_documents": [
+        "salt-warehouse",
+        "salt-warehouse",
+        "pilot-notes",
+        "cedar-observatory"
+      ]
+    }
+  ]
+}

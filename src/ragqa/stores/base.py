@@ -1,0 +1,23 @@
+"""Vector store contract."""
+
+from __future__ import annotations
+
+from typing import Protocol
+
+from ragqa.types import ChunkRecord, RetrievedChunk
+
+
+class VectorStore(Protocol):
+    def upsert(self, records: list[ChunkRecord]) -> None: ...
+
+    def query(self, embedding: list[float], k: int) -> list[RetrievedChunk]: ...
+
+    def delete_document(self, document_id: str) -> None: ...
+
+    def list_chunks(self) -> list[RetrievedChunk]: ...
+
+    def count(self) -> int: ...
+
+    def clear(self) -> None: ...
+
+    def close(self) -> None: ...

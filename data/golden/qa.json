@@ -1,0 +1,88 @@
+{
+  "items": [
+    {
+      "id": "lantern-lit",
+      "question": "When was the Meridian lighthouse lantern first lit?",
+      "reference_answer": "The Meridian lighthouse lantern was first lit on March 12, 1886.",
+      "document_id": "meridian-lighthouse",
+      "expected_snippets": ["March 12, 1886"]
+    },
+    {
+      "id": "keeper-voss",
+      "question": "Who tended the Meridian lighthouse from that first night until her retirement in 1909?",
+      "reference_answer": "Keeper Ada Voss tended the light from that first night until her retirement in 1909.",
+      "document_id": "meridian-lighthouse",
+      "expected_snippets": ["Ada Voss"]
+    },
+    {
+      "id": "crown-ring",
+      "question": "What was the crown ring cast in by the Barbizon Glassworks?",
+      "reference_answer": "Its crown ring was cast in naval bronze by the Barbizon Glassworks.",
+      "document_id": "meridian-lighthouse",
+      "expected_snippets": ["naval bronze"]
+    },
+    {
+      "id": "diaphone-serial",
+      "question": "What serial number does the compressed-air diaphone installed in 1911 carry?",
+      "reference_answer": "The compressed-air diaphone installed in 1911 carries serial number DH-44.",
+      "document_id": "meridian-lighthouse",
+      "expected_snippets": ["DH-44"]
+    },
+    {
+      "id": "horse-cart-fare",
+      "question": "What night crossing fare does the ferry compact set for a horse cart?",
+      "reference_answer": "The ferry compact sets the night crossing fare for a horse cart at 40 cents.",
+      "document_id": "ferry-compact",
+      "expected_snippets": ["40 cents"]
+    },
+    {
+      "id": "freight-window",
+      "question": "When does the ferry compact open the dawn freight window?",
+      "reference_answer": "The ferry compact opens the dawn freight window at 4:10 a.m.",
+      "document_id": "ferry-compact",
+      "expected_snippets": ["4:10 a.m."]
+    },
+    {
+      "id": "arbitrator",
+      "question": "Who does the ferry compact name as arbitrator?",
+      "reference_answer": "The ferry compact names Judge Inez Calder of the county court as arbitrator.",
+      "document_id": "ferry-compact",
+      "expected_snippets": ["Inez Calder"]
+    },
+    {
+      "id": "perseid-count",
+      "question": "How many meteors did Mara Ellison log at the Cedar observatory during the August 1908 Perseid watch?",
+      "reference_answer": "Mara Ellison logged 214 meteors at the Cedar observatory during the August 1908 Perseid watch.",
+      "document_id": "cedar-observatory",
+      "expected_snippets": ["214"]
+    },
+    {
+      "id": "barometer",
+      "question": "Why did Cedar observatory retire barometer number 17?",
+      "reference_answer": "Cedar observatory retired barometer number 17 after the glass cracked in the January 1912 freeze.",
+      "document_id": "cedar-observatory",
+      "expected_snippets": ["January 1912 freeze"]
+    },
+    {
+      "id": "dome-slit",
+      "question": "Which way does the Cedar observatory dome slit face?",
+      "reference_answer": "The Cedar observatory dome slit faces 12 degrees west of true north.",
+      "document_id": "cedar-observatory",
+      "expected_snippets": ["12 degrees west of true north"]
+    },
+    {
+      "id": "salt-harvest",
+      "question": "How many bushels did Noah Briggs certify for the 1904 municipal salt harvest?",
+      "reference_answer": "Noah Briggs certified the 1904 municipal salt harvest at 1,840 bushels.",
+      "document_id": "salt-warehouse",
+      "expected_snippets": ["1,840 bushels"]
+    },
+    {
+      "id": "dunn-shipment",
+      "question": "Why did the salt warehouse reject the 1906 Dunn shipment?",
+      "reference_answer": "The salt warehouse rejected the 1906 Dunn shipment because its moisture measured 6.5 percent.",
+      "document_id": "salt-warehouse",
+      "expected_snippets": ["6.5 percent"]
+    }
+  ]
+}
